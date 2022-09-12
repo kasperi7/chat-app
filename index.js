@@ -20,7 +20,6 @@ io.on("connection", (socket) => {
 
   socket.on("disconnect", () => {
     console.log("a user disconnected", socket.id);
-    // TODO: remove user with socket.id form users array
   });
 
   socket.on("chat message", (msg) => {
